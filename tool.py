@@ -1,4 +1,4 @@
-#coding: utf-8
+﻿#coding: utf-8
 from PIL import Image
 import os
 import sys
@@ -166,6 +166,7 @@ def git_operation():
     os.system('git add --all')
     os.system('git commit -m "add photos"')
     os.system('git push origin master')
+    print ("Done!")
 
 if __name__ == "__main__":
     cut_photo()        # 裁剪图片，裁剪成正方形，去中间部分
