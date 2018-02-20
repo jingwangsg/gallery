@@ -51,7 +51,7 @@ def compress(choose, des_dir, src_dir, file_list):
     
     参数
     -----------
-    choose: '4'
+    choose: '1'
             选择压缩的比例，有4个选项，越大压缩后的图片越小
     """
     if choose == '1':
@@ -139,6 +139,7 @@ def cut_photo():
     """
     src_dir = "photos/"
     if directory_exists(src_dir):
+        print("find!")
         if not directory_exists(src_dir):
             make_directory(src_dir)
         # business logic
