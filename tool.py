@@ -3,6 +3,7 @@ from PIL import Image
 import os
 import sys
 import json
+import codecs
 from datetime import datetime
 from ImageProcess import Graphics
 
@@ -128,7 +129,7 @@ def handle_photo():
             list_info[-1]['arr']['type'].append('image')
     list_info.reverse()  # 翻转
     final_dict = {"list": list_info}
-    fp = open("../MyPage2.0/source/photos/data.json", 'a+', 'utf-8')
+    fp = codecs.open("../MyPage2.0/source/photos/data.json", 'a+', 'utf-8')
     fp.write(json.dumps(final_dict,ensure_ascii=False))
     fp.close()
 
