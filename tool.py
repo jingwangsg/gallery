@@ -129,7 +129,7 @@ def handle_photo():
             list_info[-1]['arr']['type'].append('image')
     list_info.reverse()  # 翻转
     final_dict = {"list": list_info}
-    fp = codecs.open("../MyPage2.0/source/photos/data.json", 'w', 'utf-8')
+    fp = codecs.open("../../MyPage2.0/source/photos/data.json", 'w', 'utf-8')
     fp.write(json.dumps(final_dict,ensure_ascii=False))
     fp.close()
 
